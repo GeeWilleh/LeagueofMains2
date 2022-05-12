@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
-    "heroku-postbuild": "ng build",
+    "heroku-postbuild": "npm run build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -41,7 +41,7 @@
     "typescript": "~4.3.2"
   },
   "engines": {
-    "node": "16.14.2",
-    "npm": "6.14.16"
+    "node": "16.5.0",
+    "npm": "7.20.0"
   }
 }
