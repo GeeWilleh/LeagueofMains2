@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "FirstAppAttempt": {
+    "LeagueOfMains": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/first-app-attempt",
+            "outputPath": "dist/league-of-mains",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "FirstAppAttempt:build:production"
+              "browserTarget": "LeagueOfMains:build:production"
             },
             "development": {
-              "browserTarget": "FirstAppAttempt:build:development"
+              "browserTarget": "LeagueOfMains:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "FirstAppAttempt:build"
+            "browserTarget": "LeagueOfMains:build"
           }
         },
         "test": {
@@ -99,5 +99,5 @@
       }
     }
   },
-  "defaultProject": "FirstAppAttempt"
+  "defaultProject": "LeagueOfMains"
 }

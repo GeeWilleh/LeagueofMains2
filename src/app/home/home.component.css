@@ -1,0 +1,14 @@
+.image{
+  background: url('src\assets\images\background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100em;
+  width:100%;
+}
+
+.div{
+  min-height: inherit;
+max-height: inherit;
+}
