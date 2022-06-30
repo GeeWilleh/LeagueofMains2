@@ -1,0 +1,8 @@
+.active{
+  color: #F9A932 !important;
+  text-shadow: 1px 1px 0px black;
+}
+
+nav{
+  height: 8vh;
+}

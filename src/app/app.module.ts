@@ -2,25 +2,39 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { AccountsComponent } from './accounts/accounts.component';
-import { ChampionsComponent } from './champions/champions.component';
-import { HomeComponent } from './home/home.component';
-import { PipesComponent } from './pipes/pipes.component';
-import { SharedComponent } from './shared/shared.component';
+import { QuoteLibraryComponent } from './quote-library/quote-library.component';
+import { MyQuoteComponent } from './my-quote/my-quote.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { QuoteListComponent } from './my-quote/quote-list/quote-list.component';
+import { QuoteDetailComponent } from './my-quote/quote-detail/quote-detail.component';
+import { QuoteCardComponent } from './shared/quote-card/quote-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { QuoteEditComponent } from './my-quote/quote-edit/quote-edit.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
+import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
-    AccountsComponent,
-    ChampionsComponent,
-    HomeComponent,
-    PipesComponent,
-    SharedComponent
+    QuoteLibraryComponent,
+    MyQuoteComponent,
+    NavbarComponent,
+    QuoteListComponent,
+    QuoteDetailComponent,
+    QuoteCardComponent,
+    QuoteEditComponent,
+    AuthComponent,
+    LoadingSpinnerComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

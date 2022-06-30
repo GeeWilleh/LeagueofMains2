@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "LeagueOfMains": {
+    "tuwijo-quote-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/league-of-mains",
+            "outputPath": "dist/tuwijo-quote-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "LeagueOfMains:build:production"
+              "browserTarget": "tuwijo-quote-app:build:production"
             },
             "development": {
-              "browserTarget": "LeagueOfMains:build:development"
+              "browserTarget": "tuwijo-quote-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "LeagueOfMains:build"
+            "browserTarget": "tuwijo-quote-app:build"
           }
         },
         "test": {
@@ -99,5 +99,5 @@
       }
     }
   },
-  "defaultProject": "LeagueOfMains"
+  "defaultProject": "tuwijo-quote-app"
 }
